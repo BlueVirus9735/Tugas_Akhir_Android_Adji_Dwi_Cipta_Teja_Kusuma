@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Demo Widget Dasar"
+        android:textSize="20sp"
+        android:layout_marginBottom="32dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_standard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Standard Button"
+        android:layout_marginBottom="16dp" />
+
+    <ImageButton
+        android:id="@+id/btn_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_camera"
+        android:padding="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_marginBottom="16dp" />
+
+    <ToggleButton
+        android:id="@+id/btn_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="STATUS ON"
+        android:textOff="STATUS OFF"
+        android:layout_marginBottom="16dp" />
+
+</LinearLayout>

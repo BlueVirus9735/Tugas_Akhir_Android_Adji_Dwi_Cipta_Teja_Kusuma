@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kalkulator Sederhana"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_input1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Angka Pertama"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/et_input2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Angka Kedua"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="20dp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:alignmentMode="alignMargins">
+
+        <Button
+            android:id="@+id/btn_tambah"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Tambah (+)"
+            android:layout_margin="4dp"/>
+
+        <Button
+            android:id="@+id/btn_kurang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Kurang (-)"
+             android:layout_margin="4dp"/>
+
+        <Button
+            android:id="@+id/btn_kali"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Kali (*)"
+             android:layout_margin="4dp"/>
+
+        <Button
+            android:id="@+id/btn_bagi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Bagi (/)"
+             android:layout_margin="4dp"/>
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/tv_hasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Hasil: -"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/primaryBlue" />
+
+</LinearLayout>

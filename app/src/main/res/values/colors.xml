@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Modern UI Colors -->
+    <!-- Modern UI Colors -->
+    <color name="primaryBlue">#009688</color> <!-- Teal 500 -->
+    <color name="primaryPurple">#00796B</color> <!-- Teal 700 -->
+    <color name="bgLight">#FAFAFA</color>
+    <color name="cardBackground">#FFFFFF</color>
+    <color name="textDark">#212121</color>
+    <color name="textGray">#757575</color>
+    <color name="cardShadow">#1A000000</color>
+    <color name="headerColor">#004D40</color>
+    <color name="headerStart">#00BFA5</color>
+    <color name="headerCenter">#009688</color>
+    <color name="headerEnd">#00695C</color>
+</resources>

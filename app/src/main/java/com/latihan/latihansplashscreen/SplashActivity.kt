@@ -1,0 +1,44 @@
+package com.latihan.latihansplashscreen
+
+import android.annotation.SuppressLint
+import android.content.Intent
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+
+@SuppressLint("CustomSplashScreen")
+class SplashActivity : AppCompatActivity() {
+    
+    private lateinit var sessionManager: SessionManager
+    
+    override fun onCreate(savedInstanceState: Bundle?) {
+        val splashScreen = installSplashScreen()
+        
+        super.onCreate(savedInstanceState)
+
+        sessionManager = SessionManager(this)
+        
+        // Apply theme early
+        if (sessionManager.isDarkMode()) {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+        } else {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+        }
+
+        splashScreen.setKeepOnScreenCondition { true }
+
+        checkLoginStatus()
+    }
+    
+    private fun checkLoginStatus() {
+        android.os.Handler(mainLooper).postDelayed({
+            if (sessionManager.isLoggedIn()) {
+                startActivity(Intent(this, MainActivity::class.java))
+            } else {
+                startActivity(Intent(this, LoginActivity::class.java))
+            }
+            finish()
+        }, 2000)
+    }
+}

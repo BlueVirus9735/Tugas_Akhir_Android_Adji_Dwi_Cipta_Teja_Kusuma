@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bgLight">#121212</color>
+    <color name="cardBackground">#1E1E1E</color>
+    <color name="textDark">#FFFFFF</color>
+    <color name="textGray">#B0B0B0</color>
+    <color name="cardShadow">#40000000</color>
+    <color name="headerColor">#1A1A1A</color>
+    <color name="headerStart">#1A1A1A</color>
+    <color name="headerCenter">#121212</color>
+    <color name="headerEnd">#000000</color>
+</resources>
